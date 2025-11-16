@@ -24,7 +24,7 @@ Click the button below to view the Power BI dashboard:
 select count(id) as total_loan_applications from bank_loan_data;
 ```
 <strong>Output:</strong><br>
-![Total loan applications](images/image1.png)
+![Total loan applications](image1.png)
 
 
 
@@ -43,7 +43,7 @@ WHERE YEAR(issue_date) = YEAR(GETDATE())
 AND MONTH(issue_date) = MONTH(GETDATE());
 ```
 <strong>Output:</strong><br>
-![Total loan applications](images/image2.png)
+![Total loan applications](image2.png)
 
 ### 3. Month to Date Total Funded Amount
 
@@ -53,7 +53,7 @@ WHERE MONTH(issue_date) = 12 AND YEAR(issue_date) = 2021;
 ```
 
 <strong>Output:</strong><br>
-![Total funded amount](images/image3.png)
+![Total funded amount](image3.png)
 
 ### 4. Month over Month Total Funded Amount
 ```sql
@@ -97,7 +97,7 @@ ORDER BY
 
 ```
 <strong>Output:</strong><br>
-![Total funded amount](images/image4.png)
+![Total funded amount](image4.png)
 
 ### 5. Average Interest Rate for year 2021
 ```sql
@@ -110,7 +110,7 @@ WHERE
 ```
 
 <strong>Output:</strong><br>
-![Average Interest Rate](images/image5.png)
+![Average Interest Rate](image5.png)
 
 ### 5. Month over Month Average Interest Rate
 
@@ -158,7 +158,7 @@ ORDER BY
 ```
 
 <strong>Output:</strong><br>
-![Average Interest Rate Month over Month](images/image6.png)
+![Average Interest Rate Month over Month](image6.png)
 
 ### 6. Average Debt to Income Ratio
 
@@ -170,7 +170,7 @@ FROM
 ```
 
 <strong>Output:</strong><br>
-![Average Debt to Income Ratio](images/image7.png)
+![Average Debt to Income Ratio](image7.png)
 
 ## Good Loan Vs Bad Loan KPI's
 
@@ -194,7 +194,7 @@ FROM
 	bank_loan_data
 ```
 <strong>Output:</strong><br>
-![Good Loan Percentage](images/image7.1.png)
+![Good Loan Percentage](image7.1.png)
 
 ### 7.2 Good Loan Applications
 
@@ -207,7 +207,7 @@ WHERE
 	loan_status IN ('Fully Paid', 'Current');
 ```
 <strong>Output:</strong><br>
-![Good Loan Applications](images/image7.2.png)
+![Good Loan Applications](image7.2.png)
 
 ### 7.3 Good Loan Total Funded Amount
 
@@ -221,7 +221,7 @@ WHERE
 
 ```
 <strong>Output:</strong><br>
-![Good Loan Funded Amount](images/image7.3.1.png)
+![Good Loan Funded Amount](image7.3.1.png)
 
 or (cast result to decimal type and using concat method to add millions in the suffix)
 
@@ -234,7 +234,7 @@ WHERE
 	loan_status IN ('Fully Paid', 'Current');
 ```
 <strong>Output:</strong><br>
-![Good Loan Funded Amount](images/image7.3.2.png)
+![Good Loan Funded Amount](image7.3.2.png)
 
 ### 7.4 Good Loan Total Amount Received
 
@@ -248,7 +248,7 @@ WHERE
 ```
 
 <strong>Output:</strong><br>
-![Good Loan Total Amount Received](images/image7.4.png)
+![Good Loan Total Amount Received](image7.4.png)
 
 ### 8.1 Bad Loan Percentage
 
@@ -261,7 +261,7 @@ FROM
 	bank_loan_data
 ```
 <strong>Output:</strong><br>
-![Bad Loan Percentage](images/image8.1.png)
+![Bad Loan Percentage](image8.1.png)
 
 ### 8.2 Bad Loan Applications
 
@@ -276,7 +276,7 @@ WHERE
 
 ```
 <strong>Output:</strong><br>
-![Bad Loan Applications](images/image8.2.png)
+![Bad Loan Applications](image8.2.png)
 
 ### 8.3 Bad Loan Total Funded Amount
 
@@ -290,7 +290,7 @@ WHERE
 
 ```
 <strong>Output:</strong><br>
-![Bad Loan Applications](images/image8.3.png)
+![Bad Loan Applications](image8.3.png)
 
 ### 8.4 Bad Loan Total Amount Received
 ```sql
@@ -302,4 +302,4 @@ WHERE
 	loan_status IN ('Charged Off');
 ```
 <strong>Output:</strong><br>
-![Bad Loan Total Amount Received](images/image8.4.png)
+![Bad Loan Total Amount Received](image8.4.png)
